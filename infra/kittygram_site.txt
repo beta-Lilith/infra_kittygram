@@ -2,4 +2,4 @@ IP: 51.250.21.152;
 name_taski: https://yataski.zapto.org/;
 name_kittygram: https://yakittygram.zapto.org/;
 login: pupkin;
-password: qwerty28
+password: qwerty28;
