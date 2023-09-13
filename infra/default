@@ -1,5 +1,6 @@
 server {
         server_name 51.250.21.152 yataski.zapto.org;
+        server_tokens off;
         location /api/ {
                 proxy_pass http://127.0.0.1:8000;
         }
@@ -22,6 +23,7 @@ server {
 
 server {
         server_name 51.250.21.152 yakittygram.zapto.org;
+        server_tokens off;
         client_max_body_size 20M;
         location /api/ {
                 proxy_pass http://127.0.0.1:8080;
@@ -51,21 +53,10 @@ server {
         if ($host = yataski.zapto.org) {
                 return 301 https://$host$request_uri;
         } # managed by Certbot
-
-        listen 80;
-        server_name 51.250.21.152 yataski.zapto.org;
-        return 404; # managed by Certbot
-
-}
-
-
-server {
         if ($host = yakittygram.zapto.org) {
-        return 301 https://$host$request_uri;
+                return 301 https://$host$request_uri;
         } # managed by Certbot
-
         listen 80;
-        server_name 51.250.21.152 yakittygram.zapto.org;
+        server_name 51.250.21.152 yataski.zapto.org yakittygram.zapto.org;
         return 404; # managed by Certbot
-
 }
