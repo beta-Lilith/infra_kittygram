@@ -140,7 +140,7 @@ npm i
 Собрать и скопировать статику frontend
 ```sh
 npm run build
-sudo cp -r home/<имя_пользователя>/infra_sprint1/frontend/build/. /var/www/ infra_sprint1/
+sudo cp -r home/<имя_пользователя>/infra_sprint1/frontend/build/. /var/www/infra_sprint1/
 ```
   
 
@@ -216,7 +216,7 @@ server {
         proxy_pass http://127.0.0.1:<свободный_порт>; 
     } 
     location /admin/ { 
-        proxy_pass http://127.0.0.1: :<свободный_порт>; 
+        proxy_pass http://127.0.0.1:<свободный_порт>; 
     } 
     location /media/ {
         alias /var/www/infra_sprint1/media/;
