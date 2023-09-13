@@ -44,8 +44,8 @@ cat .ssh/id_rsa.pub
   
 
 GitHub Setting -> SSH and GPG keys -> New SSH key  
-Title: <читаемый заголовок ключа>  
-Key: <вставить скопированный из терминала ключ>  
+Title: `<читаемый_заголовок_ключа>`  
+Key: `<вставить_скопированный_из_терминала_ключ>`  
 Add SSH key
   
 
