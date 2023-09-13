@@ -152,7 +152,7 @@ pip install gunicorn==20.1.0
 ```
   
 
-Создать файл конфигурации юнита system для Gunicorn
+Создать файл конфигурации юнита systemd для Gunicorn
 ```sh
 sudo nano /etc/systemd/system/gunicorn_название_проекта.service
 ```
